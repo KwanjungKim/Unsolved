@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <span class="wrap" style="font-size: 18px;">hello</span>
+  <span class="wrap2" style="font-size: 18px;">hello</span>
+
+  <script>
+    // var wrap = document.querySelectorAll(".wrap");
+    // var opacityValue = 0;
+
+    // for(let i = 0; i < wrap.length; i++) {
+    //     wrap[i].style.opacity = opacityValue;
+    //   }
+
+    // wrap[i].addEventListener("mouseenter", function() {
+    // for(let i = 0; i < wrap.length; i++) {
+    //   opacityValue = opacityValue + 0.1;
+    //   wrap[i].style.opacity = opacityValue;
+    // }
+    // });
+    
+    
+    var wrap = document.querySelector(".wrap");
+    var opacityValue = 0;
+    var value = 0;
+    wrap.style.opacity = opacityValue;
+
+    wrap.addEventListener("mouseenter",function(){
+      opacityValue = opacityValue + 0.2
+      wrap.style.opacity = opacityValue;
+    });
+    var wrap2 = document.querySelector(".wrap2");
+    var opacityValue = 0;
+    var value = 0;
+    wrap2.style.opacity = opacityValue;
+
+    wrap2.addEventListener("mouseenter",function(){
+      opacityValue = opacityValue + 0.2
+      wrap2.style.opacity = opacityValue;
+    });
+  </script>
+
+</body>
+</html>
